@@ -5,13 +5,22 @@
 
 
 .title {
-    margin-bottom: $margin-l;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    font-family: dana-bold;
+    &--text {
+        font-size: 4rem;
+    }
 }
 
 .recommended {
 
     height: 350px;
     margin-bottom: $margin-xl;
+
+    @media screen and (min-width:1200px) {
+        height: 500px;
+    }
 
 
 
@@ -33,6 +42,7 @@
             height: 100vh;
             @include container(90%);
             justify-content: center;
+            overflow-y: hidden;
 
         }
 
@@ -48,12 +58,25 @@
             flex-shrink: 0;
             margin: $margin-s;
 
+            @media screen and (min-width:1200px) {
+                width: 300px;
+                height: 350px;
+                margin: 50px;
+            }
+
 
             &--image {
                 position: absolute;
                 top: -20px;
                 width: 120px;
                 height: 120px;
+
+
+                @media screen and (min-width:1200px) {
+                    width: 180px;
+                    height: 180px;
+                    top: -60px;
+                }
             }
 
 
@@ -63,11 +86,21 @@
                 position: absolute;
                 bottom: -25px;
 
+                @media screen and (min-width:1200px) {
+                  
+                    height: 300px;
+                 
+                }
 
 
                 &--title {
                     &--text {
                         font-size: $base-font*1.5;
+                        font-family: dana-DemiBold;
+
+                        @media screen and (min-width:1200px) {
+                            font-size: 2rem;;
+                        }
 
                     }
                 }
@@ -76,7 +109,12 @@
 
                 &--ingredient {
                     &--text {
-                        font-size: $base-font
+                        font-size: $base-font;
+
+                        
+                        @media screen and (min-width:1200px) {
+                            font-size: 1.5rem;;
+                        }
                     }
                 }
 

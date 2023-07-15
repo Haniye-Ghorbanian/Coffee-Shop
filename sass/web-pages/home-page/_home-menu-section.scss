@@ -3,9 +3,9 @@
 
     @media screen and (min-width:769px) {
 
-       
-            height: 100vh !important;
-        
+
+        // height: 100vh !important;
+
     }
 
 
@@ -14,11 +14,33 @@
         max-width: 1000px;
     }
 
+
+
+    &__title {
+
+        margin-top: 70px !important;
+
+        &--text {
+            font-family: dana-bold;
+            font-size: 2rem;
+
+
+            @media screen and (min-width: 769px) {
+                font-size: 3rem;
+            }
+        }
+    }
+
     &__options {
+        @include d-flex (space-between, center);
+        @include f-dir (row, nowrap);
+        overflow-x: scroll;
+        height: 300px;
 
-
-        // position: relative;
-        overflow: visible;
+        @media screen and (min-width: 418px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
 
 
 
@@ -35,6 +57,7 @@
             margin: 25px;
             position: relative;
             transition: .5s;
+            flex-shrink: 0;
 
 
 
@@ -81,7 +104,7 @@
                 }
 
                 &:hover .home-menu__options--card--behind1 {
-                    width: 100%;
+                    // width: 100%;
                     transform: rotate(360deg) translate(50px, 50px);
                 }
 
@@ -103,9 +126,13 @@
                 top: 0;
                 right: 0;
                 z-index: 0;
-                width: 130px;
+                width: 100px;
                 transform: rotate(0deg);
                 transition: .8s;
+            }
+
+            #strawberry {
+                width: 80px;
             }
 
 
