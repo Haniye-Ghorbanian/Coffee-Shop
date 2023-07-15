@@ -56,3 +56,31 @@
 //         transform: rotate(5deg);
 //     }
 // }
+
+
+@keyframes title {
+    0% {
+        width: 0;
+       
+    
+    }
+
+    25% {
+        width: 400px;
+        height: 50%;
+        
+        filter: invert(100%);
+    }
+
+
+    50% {
+
+        width: 400px;
+        height: 20px;
+    }
+
+    100% {
+        width: 0;
+        // transform: scaleX(1);
+    }
+}

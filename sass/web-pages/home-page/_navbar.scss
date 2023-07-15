@@ -2,7 +2,7 @@
 
     
     @include container (90%);
-    height: 30px;
+    height: 10vh;
     padding: $padding-s 0;
    
 
@@ -45,6 +45,7 @@
 
         &__right--desktop {
 
+            height: max-content ;
             display: unset;
             width: 70%;
             height: 100px;
@@ -54,7 +55,8 @@
                 position: relative;
 
                 &--text {
-                    font-size: $base-font*1.5;
+                    font-size: 2rem;
+                    font-family: dana-bold;
                 }
 
 
