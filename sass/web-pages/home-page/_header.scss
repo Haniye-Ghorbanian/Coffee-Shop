@@ -21,12 +21,7 @@
 
 
 
-            @media screen and (min-width:450px) {
-               
-            }
-
-
-
+        
 
 
             @media screen and (min-width:769px) {
@@ -50,7 +45,7 @@
                 flex-grow: .5;
                 position: relative;
                 overflow: visible;
-                // z-index: 1;
+               
 
 
 
@@ -101,12 +96,7 @@
                     }
 
 
-                    @media screen and (min-width:1420px) {
-                        // width: 610px;
-                        // position: absolute;
-                        // right: 259px;
-                        // top: -54px;
-                    }
+                    
                 }
 
 
@@ -119,7 +109,7 @@
                     position: relative;
                     left: 0;
 
-                    @media screen and (min-width:1000px) {
+                    @media screen and (min-width:769px) {
                         left: 210px;
                     }
 
