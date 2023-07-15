@@ -1,0 +1,61 @@
+@media screen and (min-width:280px) {
+    
+
+    .product {
+        height: 280px;
+
+        @media screen and (min-width: 360px) {
+            height: 350px;
+        }
+
+        width: inherit;
+        @include d-flex ();
+        position: relative;
+
+
+
+        &__container {
+            height: inherit;
+            width: 100%;
+            border-radius: 50%;
+            background-color: #D12450;
+            background-size: contain;
+            @include d-flex ();
+            position: fixed;
+            top: -25%;
+            z-index: 1;
+
+            @media screen and (min-width:360px) {
+                top: -30%;
+            }
+
+            @media screen and (min-width: 420px) {
+                top: -40%;
+                width: 420px;
+                height: 420px;
+            }
+
+
+
+            &--image {
+                height: 250px;
+                width: 250px;
+
+                @media screen and (min-width: 360px) {
+                    height: 340px;
+                    width: 340px;
+                }
+
+                position: fixed;
+                z-index: 2;   
+
+            }
+
+        }
+
+
+
+
+
+    }
+}

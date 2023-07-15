@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    margin: 0;
+    color: $text-color !important;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+html {
+    font-size: $base-font;
+}
+
+
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, p, span {
+   margin: 0 !important;
+   
+}
+
+
+svg {
+    width: 100%;
+}
+
+
+button {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+i {
+    
+    color: $text-color;
+}

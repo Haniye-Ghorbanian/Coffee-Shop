@@ -1,0 +1,18 @@
+.recommended {
+  width: 80% !important;
+  margin: 0 auto;
+}
+@media screen and (min-width: 769px) {
+  .recommended {
+    height: 100vh;
+  }
+}
+.recommended__card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(249, 228, 212, 0.7)), to(#FFF9F7));
+  background-image: linear-gradient(rgba(249, 228, 212, 0.7) 0%, #FFF9F7 100%);
+  height: 300px;
+}
+.recommended__card--image {
+  width: 250px;
+  height: 250px;
+}/*# sourceMappingURL=home-page-recommended-section.css.map */

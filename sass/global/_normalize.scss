@@ -1,0 +1,23 @@
+.page-bg {
+    background-image: url(../assets/images/header-images/bg-noise-image.png);
+
+    
+}
+
+.header {
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.d-flex-cl {
+    @include d-flex ();
+    @include f-dir (column, nowrap)
+}
+
+
+.relative {
+    position: relative;
+}

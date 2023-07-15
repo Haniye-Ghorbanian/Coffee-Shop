@@ -1,0 +1,124 @@
+@import '../../variables/variables';
+@import '../../layout/mixins';
+
+
+
+
+.title {
+    margin-bottom: $margin-l;
+}
+
+.recommended {
+
+    height: 350px;
+    margin-bottom: $margin-xl;
+
+
+
+
+
+    &__container {
+
+        @include container(90%);
+        overflow-x: scroll;
+        height: 100%;
+        justify-content: space-between;
+
+
+        @media screen and (min-width:576px) {
+            // @include container(80%);
+        }
+
+        @media screen and (min-width:769px) {
+            height: 100vh;
+            @include container(90%);
+            justify-content: center;
+
+        }
+
+
+        &--card {
+            background-image: $primary-gradient;
+            box-shadow: $primary-shadow;
+            border-radius: $primary-radius;
+            overflow: visible;
+            position: relative;
+            width: 200px;
+            height: 250px;
+            flex-shrink: 0;
+            margin: $margin-s;
+
+
+            &--image {
+                position: absolute;
+                top: -20px;
+                width: 120px;
+                height: 120px;
+            }
+
+
+            &--description {
+
+                height: 200px;
+                position: absolute;
+                bottom: -25px;
+
+
+
+                &--title {
+                    &--text {
+                        font-size: $base-font*1.5;
+
+                    }
+                }
+
+
+
+                &--ingredient {
+                    &--text {
+                        font-size: $base-font
+                    }
+                }
+
+
+                &--detail {
+                    &--cta {
+
+                        &--plus {
+                            width: calc(30% - 4px);
+                            height: 20px;
+                            background-color: $bold-color;
+                            color: white;
+                            border-radius: $primary-radius;
+                            & i {
+                                color: white;
+                            }
+                        }
+
+                        &--digit {
+                            color: $bold-color;
+                            font-weight: 600;
+                        }
+
+                        &--minus {
+                            @extend .recommended__container--card--description--detail--cta--plus;
+                            & i {
+                                color: white;
+                            }
+                        }
+                    }
+
+
+                    &--price {}
+                }
+            }
+
+
+        }
+
+    }
+
+
+
+
+}

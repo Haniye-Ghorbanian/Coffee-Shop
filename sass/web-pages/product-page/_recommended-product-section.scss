@@ -1,0 +1,93 @@
+@media screen and  (min-width: 280px) {
+    
+    #for-desktop {
+        display: none;
+    }
+    .product-recommended {
+
+        @include d-flex (normal, center);
+        @include f-dir (row, nowrap);
+        @include container (90%);
+        height: 230px;
+        overflow-y: visible;
+        overflow-x: scroll;
+        padding: $padding-s;
+        // position: relative;
+        gap: 20px;
+       
+       
+
+
+        &__card {
+
+            @include d-flex (space-between, center);
+            @include f-dir (column, nowrap);
+            // width: 120px;
+            // width: calc(50% - 20px);
+            width: 150px;
+            height: 130px; 
+            background: $primary-gradient;
+            box-shadow: $primary-shadow;
+            border-radius: $primary-radius;
+            padding: 5px;
+            overflow: visible;
+            position: relative;
+            // margin-right: 10px;
+            flex-shrink: 0;
+            
+            
+            
+
+            
+            &--image {
+
+                width: $mobile-card-size-image;
+                height: $mobile-card-size-image;
+                position: absolute;
+                top: $primary-top;
+                 
+                
+               
+                
+            }
+
+            &--title {
+
+                position: absolute;
+                top: 60px;
+                &--name {
+                    font-size: 1.2rem;
+                }
+            }
+
+
+            &--detail {
+                @include d-flex (space-between, center);
+                @include container (80%);
+                position: absolute;
+                top: 90px;
+
+
+                &--add {
+                    @include d-flex ();
+                    width: 40px;
+                    height: 25px;
+                    border-radius: 8px;
+                    background-color: $bold-color;
+                    padding: $padding-xs;
+                    color: white;
+                    flex-grow: .5;
+                    flex-shrink: 1.5;
+                   
+
+
+                    &--name {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+
+
+    }
+}

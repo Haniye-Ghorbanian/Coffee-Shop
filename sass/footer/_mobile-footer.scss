@@ -1,0 +1,57 @@
+@import '../variables/variables';
+
+
+.mobile-footer {
+
+  @include d-flex (center, center);
+
+}
+
+
+
+@media screen and (min-width:280px) {
+
+    .desktop-footer {
+        display: none;
+    }
+
+    .mobile-footer {
+        margin-top: 20px;
+        background-color: $primary-color;
+        height: 50px;
+        border-radius: 20px 20px 0 0;
+        position: fixed;
+        bottom: 0;
+        z-index: 10;
+
+        &__container {
+
+
+            &--options {
+
+
+
+                &--icon {
+                    width: 18px;
+                    height: 18px;
+
+                    & i {
+                        font-size: $base-font*1.3;
+                    }
+                }
+
+
+                &--title {
+
+                    &--text {
+                        font-size: $base-font*.9;
+                        color: $text-color;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+

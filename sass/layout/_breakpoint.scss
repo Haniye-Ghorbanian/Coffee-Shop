@@ -1,0 +1,44 @@
+@import '../variables/variables';
+@import './mixins';
+
+
+
+
+
+@mixin screen ($m-w) {
+
+    @media screen and (min-width: $m-w) {
+        @content;
+    }
+}
+
+
+
+@media screen and (min-width: 280px) {
+    
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1.4rem; 
+    }
+
+    span {
+        font-size: 1.1rem;
+    }
+
+    i {
+        font-size: 1.75rem;
+    }
+    
+}

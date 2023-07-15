@@ -1,0 +1,97 @@
+.navbar {
+
+    
+    @include container (90%);
+    height: 30px;
+    padding: $padding-s 0;
+   
+
+
+    @media screen and (min-width:280px) {
+
+        &__right--desktop {
+            display: none;
+        }
+
+        &__right--mobile {
+            @include container (90%);
+            padding: $padding-xs;
+
+            &--icons--right {
+                width: 30px;
+            }
+
+        }
+
+
+
+
+    }
+
+
+
+
+
+
+
+    @media screen and (min-width:769px) {
+
+
+
+        &__right--mobile {
+            display: none;
+        }
+
+
+        &__right--desktop {
+
+            display: unset;
+            width: 70%;
+            height: 100px;
+
+            &--options {
+                padding: $padding-s;
+                position: relative;
+
+                &--text {
+                    font-size: $base-font*1.5;
+                }
+
+
+            }
+
+            .navbar__right--desktop--options::after {
+                content: "";
+                position: absolute;
+                bottom: -8px;
+                left: 0;
+                height: 4px;
+                width: 50%;
+                border-radius: 5px;
+                background-color: $bold-color;
+                transition: .3s;
+                transition-timing-function: ease-in-out;
+                transform: scaleX(0);
+                opacity: 0;
+            }
+
+            .navbar__right--desktop--options:hover::after {
+                transform: scaleX(1);
+                width: 100%;
+                bottom: 0px;
+                opacity: 1;
+            }
+        }
+
+
+
+        }
+
+
+
+
+
+        &__left {
+            width: 30%;
+        }
+    }

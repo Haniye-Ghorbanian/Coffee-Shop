@@ -1,0 +1,148 @@
+.home-menu {
+
+
+    @media screen and (min-width:769px) {
+
+       
+            height: 100vh !important;
+        
+    }
+
+
+
+    #home-page-menu {
+        max-width: 1000px;
+    }
+
+    &__options {
+
+
+        // position: relative;
+        overflow: visible;
+
+
+
+
+
+
+
+
+
+        &--card {
+
+            width: 150px;
+            height: 150px;
+            margin: 25px;
+            position: relative;
+            transition: .5s;
+
+
+
+
+
+
+
+            @media screen and (min-width:769px) {
+
+
+                margin: 0;
+
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    border-radius: $primary-radius;
+                    background-color: rgba($color: #000000, $alpha: 1);
+                    opacity: .3;
+                    position: absolute;
+                    transition: .4s;
+                    top: 0;
+                    right: 0;
+                    z-index: 4;
+
+
+                }
+
+
+
+                &:hover {
+                    width: 130px;
+                    height: 130px;
+                    border-radius: 50%;
+                }
+
+                &:hover .home-menu__options--card--bg {
+                    border-radius: 50%;
+                    transition: .6s;
+                }
+
+                &:hover::after {
+                    background-color: transparent;
+                }
+
+                &:hover .home-menu__options--card--behind1 {
+                    width: 100%;
+                    transform: rotate(360deg) translate(50px, 50px);
+                }
+
+                &:hover .home-menu__options--card--image {
+                    top: -35px;
+                }
+
+                &:hover .home-menu__options--card--title {
+                    bottom: 45px;
+
+                }
+
+            }
+
+
+            &--behind1 {
+
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 0;
+                width: 130px;
+                transform: rotate(0deg);
+                transition: .8s;
+            }
+
+
+            &--bg {
+                position: absolute;
+                border-radius: $primary-radius;
+                width: 100%;
+                height: 100%;
+                background-color: $secondary-color;
+                z-index: 1;
+            }
+
+            &--image {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 10px;
+                transition: .6s;
+                z-index: 3;
+            }
+
+
+
+
+
+            &--title {
+
+                position: absolute;
+                bottom: 25px;
+                transition: .6s;
+                z-index: 2;
+
+                &--text {
+                    color: white;
+                }
+            }
+        }
+
+    }
+}

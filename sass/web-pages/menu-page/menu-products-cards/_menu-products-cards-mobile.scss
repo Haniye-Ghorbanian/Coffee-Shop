@@ -1,0 +1,106 @@
+.menu-products {
+
+    
+    @include d-flex (start, center);
+    @include f-dir (column, wrap);
+    margin-top: 70px;
+    // width: 80%;
+    max-width: 900px !important;
+    // height: 1000px;
+
+
+    @media screen and (max-width: 400px) {
+
+        height: 1000px;
+        
+    }
+
+
+    
+        @media screen and (min-width:280px) {
+
+            // flex-direction: row !important;
+            // flex-wrap: wrap !important;
+             
+            @include f-dir (row, wrap);
+            @include d-flex (center, start);
+            
+        }
+
+    
+
+    &__card {
+
+        background-image: $primary-gradient;
+        border-radius: $primary-radius !important;
+        box-shadow: $primary-shadow;
+        width: 170px !important;
+        height: 240px;
+        // flex-basis: 150px;
+        // flex-shrink: 0.5;
+        // flex-grow: 0.5;
+
+
+        &--image {
+            width: $mobile-card-size-image;
+            height: $mobile-card-size-image;
+            top: $primary-top;
+
+            @media screen and (min-width:900px) {
+                top: -30px;
+            }
+        }
+
+
+        &__description {
+            &--title {
+
+            }
+
+            &--ingredient {
+
+            }
+
+            &--detail {
+
+                
+
+                &--number {
+
+
+                    &--plus {
+                        
+                        width: calc(50% - 4px);
+                        height: 20px;
+                        background-color: $bold-color;
+                        color: white;
+                        border-radius: $primary-radius;
+                    }
+
+                    &--digit {
+                        
+                        color: $bold-color;
+                    }
+
+                    &--minus {
+                        @extend .menu-products__card__description--detail--number--plus
+                    }
+                }
+
+
+                &--price {
+
+                }
+            }
+
+
+            &--more {
+                &--title {
+                    font-size: $base-font/1.1;
+                }
+            }
+        }
+
+
+    }
+}

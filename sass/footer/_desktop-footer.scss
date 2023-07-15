@@ -1,0 +1,29 @@
+
+@media screen and (min-width:769px) {
+
+
+    .mobile-footer {
+        display: none !important;
+    }
+
+
+    .desktop-footer {
+        height: 100px;
+        background-color: $primary-color;
+
+
+        &__container {
+            @include container (30%);
+
+            &--options {
+
+                &--icon {
+
+                    color: gray;
+                    font-size: $base-font*2 !important;
+                }
+
+            }
+        }
+    }
+}

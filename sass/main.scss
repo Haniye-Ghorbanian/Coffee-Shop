@@ -1,0 +1,69 @@
+
+
+// variables //
+
+@import './variables/variables';
+
+
+
+
+
+
+//  layout //
+
+@import './layout/breakpoint';
+
+@import './layout/mixins';
+
+@import './layout/style';
+
+@import './layout/animations';
+
+
+
+
+
+
+
+// global //
+
+@import './global/common';
+
+@import './global/normalize';
+
+
+
+
+
+
+
+
+// For Home Page (index.html) //
+
+@import './web-pages/home-page/index';
+
+
+
+
+
+
+// For Product Page (product.html) //
+
+@import './web-pages/product-page/index';
+
+
+
+
+
+
+// For Menu page (menu.html) //
+
+@import './web-pages/menu-page/index';
+
+
+
+
+
+// for footer
+
+@import './footer/index';

@@ -1,0 +1,67 @@
+@media screen and (min-width:769px) {
+    .whole-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
+
+
+
+        .product-header {
+            width: 50%;
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+
+
+            .product {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                position: relative;
+
+                &__container {
+                    position: absolute;
+                    display: block;
+                    transform: translateY(50%);
+                    width: 340px;
+                    height: 340px;
+
+                    @media screen and (min-width:1200px) {
+                        width: 420px;
+                        height: 420px;
+                        transform: translateY(25%);
+                    }
+
+                    &--image {
+                        width: 360px;
+                        height: 360px;
+                        position: absolute;
+                        bottom: 50px;
+
+                        @media screen and (min-width:1200px) {
+                            width: 420px;
+                            height: 420px;
+                            transform: translateY;
+                        }
+                    }
+                }
+            }
+        }
+
+
+
+
+        
+    }
+
+
+   
+
+
+    
+}
