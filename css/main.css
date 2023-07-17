@@ -225,7 +225,7 @@ i {
     position: relative;
   }
   .navbar__right--desktop--options--text {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: dana-bold;
   }
   .navbar__right--desktop .navbar__right--desktop--options::after {
@@ -532,8 +532,8 @@ i {
     position: absolute;
     top: 40%;
     z-index: -1;
-    -webkit-animation: title 2000ms ease-in-out 0.5s 1 forwards;
-            animation: title 2000ms ease-in-out 0.5s 1 forwards;
+    -webkit-animation: title 2000ms ease-in-out 1.8s 1 forwards;
+            animation: title 2000ms ease-in-out 1.8s 1 forwards;
   }
 }
 @media screen and (min-width: 280px) and (min-width: 769px) {
@@ -789,6 +789,7 @@ i {
   height: 200px;
   position: absolute;
   bottom: -25px;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .recommended__container--card--description {
@@ -1465,6 +1466,7 @@ i {
   .desktop-footer {
     height: 100px;
     background-color: #F9E4D4;
+    opacity: 0.8;
   }
   .desktop-footer__container {
     width: 30% !important;
