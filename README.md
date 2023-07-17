@@ -92,7 +92,18 @@ Our template was created using the following resources and libraries:
 
 ## Customization
 
-We've understand that every coffee shop is unique, which is why we offer customization optons.  You can choose your own color schemes 
+We've understand that every coffee shop is unique, which is why we offer customization optons.  You can choose your own color schemes, allowing you to tailor the website to your coffee shop's branding branding and aesthetics.
+
+  We have five main colors in our web design color palette: 
+
+  text color is <span style="color:#470D21;"> 
+
+
+$primary-color: #F9E4D4;
+$secondary-color: #D1512D;
+$accent-color: #D12450;
+
+
 
 
 
@@ -104,7 +115,7 @@ We've understand that every coffee shop is unique, which is why we offer customi
 
 If you have any questions or feedback dont't hesitate to get in touch.
 
-[haniyeghorbanian79@gmail.com] 
+[haniyeghorbanian79@gmail.com]
 
 
 
