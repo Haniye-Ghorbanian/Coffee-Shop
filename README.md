@@ -3,7 +3,7 @@ Hey there, Welcome to the Coffee Shop Web Template Project.
 
 This tempalte is designed to provide a __user-friendly__ experience for customers who are intrested in learning about your coffee shop and products.
 
-**You can also see the website using this [link] (https://haniyeghorbanian.ir/)**
+**You can also see the website using [this link] (https://haniyeghorbanian.ir/)**
 
 ## Description
 
@@ -66,7 +66,21 @@ Our template was created using the following resources and libraries:
 
 - **AOS Animation** 
 
-` <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">`
+` <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>`
+
+
+- **BootStrap**
+
+`<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">`
+
+
+- **FontAwsome**
+
+`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />`
 
 
 
