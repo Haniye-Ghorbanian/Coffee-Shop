@@ -19,11 +19,11 @@ To get started with Coffee Shop template, you will need to have basic understand
 
 1 Clone the repository to your local machine.
 
-2 Open the index.html file in ypu text editor.
+2 Open the index.html file in your text editor.
 
-3 Customize the template to fit your brand by editting the HTML and CSS filed.
+3 Customize the template to fit your brand by editting the HTML and CSS file.
 
-4 Save your changes and launch index.html file in ypur web browser to view your customized web tempalte.
+4 Save your changes and launch index.html file in your web browser to view your customized web template.
 
 
 
