@@ -35,11 +35,20 @@
         @include d-flex (space-between, center);
         @include f-dir (row, nowrap);
         overflow-x: scroll;
-        height: 300px;
+        overflow-y: hidden;
+        
 
         @media screen and (min-width: 418px) {
             flex-wrap: wrap;
             justify-content: center;
+            height: 375px;
+            
+        }
+
+        @media screen and (min-width: 769px) {
+           
+            justify-content: space-between;
+            
         }
 
 

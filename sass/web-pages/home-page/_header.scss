@@ -117,12 +117,12 @@
                     &--right {
                         flex-grow: 0;
                         flex-shrink: 0;
-                        top: -65px;
+                        top: -50px;
                         overflow: visible;
                         position: absolute;
-                        width: 240px;
+                        width: 190px;
                         z-index: 2;
-                        right: -60px;
+                        right: -30px;
                         transition: 1000ms;
                         transform: rotate(15deg);
                         animation: up-down 10s ease-in-out .5ms infinite;
@@ -142,9 +142,9 @@
 
 
                         @media screen and (min-width:1000px) {
-                            width: 550px;
-                            right: -300px;
-                            top: 0px;
+                            
+                            right: -190px;
+                            top: -25px;
                         }
 
 
@@ -177,9 +177,9 @@
                         }
 
                         @media screen and (min-width:1000px) {
-                            width: 440px;
-                            right: -80px;
-                            top: 0px;
+                            width: 500px;
+                            right: -35px;
+                            top: -85px;
                         }
 
 

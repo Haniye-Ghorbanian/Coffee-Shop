@@ -8,6 +8,7 @@
     margin-top: 100px;
     margin-bottom: 100px;
     font-family: dana-bold;
+
     &--text {
         font-size: 4rem;
     }
@@ -68,13 +69,19 @@
             &--image {
                 position: absolute;
                 top: -20px;
-                width: 120px;
-                height: 120px;
+
+                &>img {
+                    width: 120px !important;
+                    height: 120px !important;
+                }
+
 
 
                 @media screen and (min-width:1200px) {
-                    width: 180px;
-                    height: 180px;
+                    & > img {
+                        width: 180px !important;
+                        height: 180px !important;
+                    }
                     top: -60px;
                 }
             }
@@ -88,9 +95,9 @@
                 width: 100%;
 
                 @media screen and (min-width:1200px) {
-                  
+
                     height: 300px;
-                 
+
                 }
 
 
@@ -100,7 +107,8 @@
                         font-family: dana-DemiBold;
 
                         @media screen and (min-width:1200px) {
-                            font-size: 2rem;;
+                            font-size: 2rem;
+                            ;
                         }
 
                     }
@@ -112,9 +120,10 @@
                     &--text {
                         font-size: $base-font;
 
-                        
+
                         @media screen and (min-width:1200px) {
-                            font-size: 1.5rem;;
+                            font-size: 1.5rem;
+                            ;
                         }
                     }
                 }
@@ -129,6 +138,7 @@
                             background-color: $bold-color;
                             color: white;
                             border-radius: $primary-radius;
+
                             & i {
                                 color: white;
                             }
@@ -141,6 +151,7 @@
 
                         &--minus {
                             @extend .recommended__container--card--description--detail--cta--plus;
+
                             & i {
                                 color: white;
                             }
@@ -148,7 +159,7 @@
                     }
 
 
-                    &--price {}
+
                 }
             }
 
